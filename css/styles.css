@@ -13,71 +13,223 @@ main {
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.wrapper {
+.bracket-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
+    transform: scale(.5);
+}
+.square-wrapper {
+    position: relative;
+    left: -38px;
+    top: -2px;
+    transform: scale(1);
 }
 .title {
     font-size: 2rem;
     margin: 0;
     padding: 0;
+    color: #001220;
+    text-shadow: 0 0 2px #024e87;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    transition: color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
+}
+.title:hover {
+    color: #024e87;
+    text-shadow: 0 0 2px #001220;
+    cursor: pointer;
 }
 
 /* RIGHT BRACKET */
 .right-bracket {
     position: relative;
+    opacity: .7;
 }
 .right-bracket-middle {
-    height: 40px;
-    width: 10px;
+    position: absolute;
+    height: 65px;
+    width: 8px;
+    top: 0px;
+    left: 3px;
     background: white;
 }
 .right-bracket-top {
     position: absolute;
     background: white;
-    height: 10px;
+    height: 5px;
     width: 20px;
-    top: -10px;
-    left: -10px;
+    top: 0px;
+    left: -9px;
 }
 .right-bracket-bottom {
     position: absolute;
     background: white;
-    height: 10px;
+    height: 5px;
     width: 20px;
-    top: 40px;
-    left: -10px;
+    top: 60px;
+    left: -9px;
 }
 
 /* LEFT BRACKET */
 .left-bracket {
     position: relative;
+    padding-right: 78px;
+    opacity: .7;
 }
 .left-bracket-middle {
     position: absolute;
     background: white;
-    height: 40px;
-    width: 10px;
-    top: -20px;
+    height: 60px;
+    width: 8px;
+    top: 0px;
     left: -10px;
 }
 .left-bracket-top {
     position: absolute;
     background-color: white;
-    height: 10px;
+    height: 5px;
     width: 20px;
-    top: -30px;
+    top: 0px;
     left: -10px;
 }
 .left-bracket-bottom {
     position: absolute;
     background-color: white;
-    height: 10px;
+    height: 5px;
     width: 20px;
-    top: 20px;
+    top: 60px;
     left: -10px;
+}
+
+/* SQUARES */
+.square1 {
+    position: absolute;
+    background: #C62368;
+    width: 10px;
+    height: 10px;
+    top: 10px;
+    right: 15px;
+    transition: background 0.3s ease-in-out;
+}
+.square1:hover {
+    background: white;
+}
+.square2 {
+    position: absolute;
+    background: #C62368;
+    width: 10px;
+    height: 10px;
+    top: 30px;
+    right: 15px;
+    transition: background 0.3s ease-in-out;
+}
+.square2:hover {
+    background: white;
+}
+.square3 {
+    position: absolute;
+    background: #C62368;
+    width: 10px;
+    height: 10px;
+    top: 50px;
+    right: 15px;
+    transition: background 0.3s ease-in-out;
+}
+.square3:hover {
+    background: white;
+}
+.square4 {
+    position: absolute;
+    background: #C62368;
+    width: 10px;
+    height: 10px;
+    top: 10px;
+    right: -5px;
+    transition: background 0.3s ease-in-out;
+}
+.square4:hover {
+    background: white;
+}
+.square5 {
+    position: absolute;
+    background: #C62368;
+    width: 10px;
+    height: 10px;
+    top: 30px;
+    right: -5px;
+    transition: background 0.3s ease-in-out;
+}
+.square5:hover {
+    background: white;
+}
+.square6 {
+    position: absolute;
+    background: #C62368;
+    width: 10px;
+    height: 10px;
+    top: 50px;
+    right: -5px;
+    transition: background 0.3s ease-in-out;
+}
+.square6:hover {
+    background: white;
+}
+.square7 {
+    position: absolute;
+    background: #C62368;
+    width: 10px;
+    height: 10px;
+    top: 50px;
+    right: -25px;
+    transition: background 0.3s ease-in-out;
+}
+.square7:hover {
+    background: white;
+}
+.square8 {
+    position: absolute;
+    background: #C62368;
+    width: 10px;
+    height: 10px;
+    top: 30px;
+    right: -25px;
+    transition: background 0.3s ease-in-out;
+}
+.square8:hover {
+    background: white;
+}
+.square9 {
+    position: absolute;
+    background: #C62368;
+    width: 10px;
+    height: 10px;
+    top: 10px;
+    right: -25px;
+    transition: background 0.3s ease-in-out;
+}
+.square9:hover {
+    background: white;
+}
+
+/* KEYFRAMES */
+@keyframes moveRight {
+    0% {
+        transform: translateX(0)
+    }
+    100% {
+        transform: translateX(100px);
+    }
+}
+@keyframes moveLeft {
+    0% {
+        transform: translateX(0)
+    }
+    100% {
+        transform: translateX(-100px);
+    }
 }
