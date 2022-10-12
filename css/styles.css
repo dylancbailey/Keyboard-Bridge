@@ -1,0 +1,83 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background: #001220;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* RIGHT BRACKET */
+.right-bracket {
+    position: relative;
+}
+.right-bracket-middle {
+    height: 40px;
+    width: 10px;
+    background: white;
+}
+.right-bracket-top {
+    position: absolute;
+    background: white;
+    height: 10px;
+    width: 20px;
+    top: -10px;
+    left: -10px;
+}
+.right-bracket-bottom {
+    position: absolute;
+    background: white;
+    height: 10px;
+    width: 20px;
+    top: 40px;
+    left: -10px;
+}
+
+/* LEFT BRACKET */
+.left-bracket {
+    position: relative;
+}
+.left-bracket-middle {
+    position: absolute;
+    background: white;
+    height: 40px;
+    width: 10px;
+    top: -20px;
+    left: -10px;
+}
+.left-bracket-top {
+    position: absolute;
+    background-color: white;
+    height: 10px;
+    width: 20px;
+    top: -30px;
+    left: -10px;
+}
+.left-bracket-bottom {
+    position: absolute;
+    background-color: white;
+    height: 10px;
+    width: 20px;
+    top: 20px;
+    left: -10px;
+}
